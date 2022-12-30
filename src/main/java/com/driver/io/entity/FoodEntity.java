@@ -1,7 +1,9 @@
 package com.driver.io.entity;
 
 import com.fasterxml.jackson.databind.annotation.JsonPOJOBuilder;
+import lombok.AllArgsConstructor;
 import lombok.Builder;
+import lombok.NoArgsConstructor;
 
 import java.io.Serializable;
 
@@ -12,6 +14,8 @@ import javax.persistence.Id;
 
 @Entity(name = "foods")
 @Builder
+@NoArgsConstructor
+@AllArgsConstructor
 public class FoodEntity{
 	@Id
 	@GeneratedValue

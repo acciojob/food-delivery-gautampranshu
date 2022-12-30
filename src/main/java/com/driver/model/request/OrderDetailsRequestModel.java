@@ -1,5 +1,10 @@
 package com.driver.model.request;
 
+import lombok.AllArgsConstructor;
+import lombok.NoArgsConstructor;
+
+@AllArgsConstructor
+@NoArgsConstructor
 public class OrderDetailsRequestModel {
 
 	private String[] items;
